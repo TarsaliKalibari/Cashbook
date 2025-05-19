@@ -1,0 +1,20 @@
+name: charity_cashbook_flutter
+description: A simple cashbook app for charitable organizations
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  sqflite: any
+  path: any
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/lang/
