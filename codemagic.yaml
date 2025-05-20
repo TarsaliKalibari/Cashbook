@@ -5,8 +5,9 @@ workflows:
     environment:
       flutter: stable
     scripts:
+      - name: Get dependencies
+        script: flutter pub get
       - name: Build APK
-        script: |
-          flutter build apk --target=lib/main.dart
+        script: flutter build apk --target=lib/main.dart
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
