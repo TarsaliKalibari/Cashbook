@@ -8,6 +8,7 @@ workflows:
       - name: Get dependencies
         script: flutter pub get
       - name: Build APK
-        script: flutter build apk --release -t lib/your_entry_file.dart
+        script: flutter:
+  entry_point: lib/main.dart
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
